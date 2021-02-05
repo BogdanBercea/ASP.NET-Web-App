@@ -10,6 +10,13 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
+import { MemberListComponent } from './members/member-list/member-list.component';
+import { MemeberDetailComponent } from './members/memeber-detail/memeber-detail.component';
+import { ListsComponent } from './lists/lists.component';
+import { MessagesComponent } from './messages/messages.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ToastrModule, ToastrService } from 'ngx-toastr';
+import { SharedModule } from './_modules/shared.module';
 
 
 @NgModule({
@@ -17,7 +24,11 @@ import { RegisterComponent } from './register/register.component';
     AppComponent,
     NavComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    MemberListComponent,
+    MemeberDetailComponent,
+    ListsComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +36,8 @@ import { RegisterComponent } from './register/register.component';
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    BsDropdownModule.forRoot()
+    FontAwesomeModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
